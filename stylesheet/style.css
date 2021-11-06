@@ -1,0 +1,27 @@
+body {
+  color: #333;
+}
+header {
+  height: 94px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+}
+
+.header-inner {
+  width: 1022px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  
+  background-color: antiquewhite;
+}
+
+.site-title {
+  display: flex;
+}
+
+
