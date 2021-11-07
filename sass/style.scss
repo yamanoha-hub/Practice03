@@ -1,0 +1,172 @@
+
+body {
+  color: #333;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn {
+  height: 37px;
+  background: linear-gradient(to right, #FA41CC, #6020B0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  display: inline-block;
+  
+  a {
+    line-height: 37px;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+
+// ヘッダー
+header {
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 100;
+ 
+  .header-inner {
+    width: 1022px;
+    margin: 0 auto;
+    padding: 0 21px 0 20px;
+    display: flex;
+    align-items: center;
+
+    .site-title {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 24px;
+        margin-left: 16px;
+      }
+    }
+    .header-nav ul {
+      margin-left: 136px;
+      display: flex;
+
+      li {
+        margin-right: 49px;
+        font-size: 16px;
+        line-height: 1.19;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .btn {
+      margin-left: auto;
+      a {
+        padding: 0 36px;
+      }
+    }
+  }
+}
+// ヘッダー
+
+
+// メインビジュアル
+.main-visual {
+  height: calc(100vh - 94px);
+  margin-top: 94px;
+  background-image: url(../images/bg-circle.png);
+  background-repeat: no-repeat;
+  background-position: top -161px right -85px;
+  background-color: bisque;
+  .mv-inner { 
+    padding-top: 131px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    .mv-left {
+      margin-right: 133px;
+      h2 {
+        font-size: 32px;
+        line-height: 1.68;
+        margin-top: 37px;
+        margin-bottom: 38px;
+        display: flex;
+        justify-content: space-between;
+        height: 140px;
+        position: relative;
+        top: -11px; // half-leadingの調整
+      }
+      p {
+        margin-bottom: 39px;
+        height: 97px;
+        line-height: 1.68;
+      }
+      .btn a {
+        padding: 0 36px;
+      } 
+    }
+  }
+}
+// メインビジュアル
+
+// 特徴
+.features-inner {
+  margin-top: 80px;
+  margin-bottom: 156px;
+  .section-tittle {
+    text-align: center;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+      color: #3BA6C9;
+      margin-top: 19px;
+    }
+  }
+  .features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    h2 {
+      font-size: 28px;
+      margin-top: 65px;
+      margin-bottom: 54px;
+    }
+    article {
+      display: flex;
+      img {
+        margin-right: 154px;
+      }
+
+      h3 {
+        font-size: 24px;
+        line-height: 2;
+        height: 72px;
+        margin-top: 54px;
+        margin-bottom: 54px;
+        position: relative;
+        top: 12px;  // half-leadingの調整
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        height: 94px;
+      }
+      // .coding-text {
+
+      // }
+    }
+  }
+// 特徴
+
+
+
+
+
+

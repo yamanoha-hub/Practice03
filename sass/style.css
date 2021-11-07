@@ -1,0 +1,209 @@
+body {
+  color: #333;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.btn {
+  height: 37px;
+  background: -webkit-gradient(linear, left top, right top, from(#FA41CC), to(#6020B0));
+  background: linear-gradient(to right, #FA41CC, #6020B0);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btn a {
+  line-height: 37px;
+  color: #fff;
+  font-size: 14px;
+}
+
+header {
+  height: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 100;
+}
+
+header .header-inner {
+  width: 1022px;
+  margin: 0 auto;
+  padding: 0 21px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-inner .site-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-inner .site-title h1 {
+  font-size: 24px;
+  margin-left: 16px;
+}
+
+header .header-inner .header-nav ul {
+  margin-left: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-inner .header-nav ul li {
+  margin-right: 49px;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+header .header-inner .header-nav ul li:last-child {
+  margin-right: 0;
+}
+
+header .header-inner .btn {
+  margin-left: auto;
+}
+
+header .header-inner .btn a {
+  padding: 0 36px;
+}
+
+.main-visual {
+  height: calc(100vh - 94px);
+  margin-top: 94px;
+  background-image: url(../images/bg-circle.png);
+  background-repeat: no-repeat;
+  background-position: top -161px right -85px;
+  background-color: bisque;
+}
+
+.main-visual .mv-inner {
+  padding-top: 131px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-visual .mv-inner .mv-left {
+  margin-right: 133px;
+}
+
+.main-visual .mv-inner .mv-left h2 {
+  font-size: 32px;
+  line-height: 1.68;
+  margin-top: 37px;
+  margin-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 140px;
+  position: relative;
+  top: -11px;
+}
+
+.main-visual .mv-inner .mv-left p {
+  margin-bottom: 39px;
+  height: 97px;
+  line-height: 1.68;
+}
+
+.main-visual .mv-inner .mv-left .btn a {
+  padding: 0 36px;
+}
+
+.features-inner {
+  margin-top: 80px;
+  margin-bottom: 156px;
+}
+
+.features-inner .section-tittle {
+  text-align: center;
+}
+
+.features-inner .section-tittle h2 {
+  font-size: 32px;
+}
+
+.features-inner .section-tittle p {
+  font-size: 16px;
+  color: #3BA6C9;
+  margin-top: 19px;
+}
+
+.features-inner .features-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-inner h2 {
+  font-size: 28px;
+  margin-top: 65px;
+  margin-bottom: 54px;
+}
+
+.features-inner article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features-inner article img {
+  margin-right: 154px;
+}
+
+.features-inner article h3 {
+  font-size: 24px;
+  line-height: 2;
+  height: 72px;
+  margin-top: 54px;
+  margin-bottom: 54px;
+  position: relative;
+  top: 12px;
+}
+
+.features-inner article p {
+  font-size: 16px;
+  line-height: 1.6;
+  height: 94px;
+}
+/*# sourceMappingURL=style.css.map */
