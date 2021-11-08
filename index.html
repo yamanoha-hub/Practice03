@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ユアコーディング</title>
   <meta name=“robots” content=“noindex”>  <!--- 検索結果に表示しない --->
   <link rel="stylesheet" href="stylesheet/reset.css">
   <link rel="stylesheet" href="sass/style.css">
@@ -13,28 +13,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">  <!-- グーグルフォント -->
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="header-inner">
-      <div class="site-title">
+      <div class="header-logo">
         <img src="images/logo.png" alt="ロゴ">
         <h1>ユアコーディング</h1>
       </div>
-      <div class="header-nav">
+      <nav class="header-nav">
         <ul>
           <li><a href="#">特徴</a></li>
           <li><a href="#">価格</a></li>
           <li><a href="#">お問い合わせ</a></li>
         </ul>
-      </div>
-      <div class="btn">
-        <a href="#">お問い合わせ</a>
+      </nav>
+      <div class="header-btn">
+        <a href="#" class="contact-btn">お問い合わせ</a>
       </div>
     </div>
   </header>
   <main>
-    <section class="main-visual">
+    <section class="mv">
       <div class="mv-inner">
-        <div class="mv-left">
+        <div class="mv-text">
           <h2>コーディングの手間を<br>
             最小に、デザインに注力<br>
             する助けに
@@ -44,74 +44,160 @@
             デザインに注力されたい方の<br>
             助けになります
           </p>
-          <div class="btn">
-            <a href="#">お問い合わせ</a>
-          </div>
+          <a href="#" class="contact-btn">お問い合わせ</a>
         </div>
-        <div class="mv-right">
+        <div class="mv-img">
           <img src="images/manager.png" alt="">
         </div>
       </div>
     </section>
     <section class="features">
       <div class="features-inner">
-        <div class="section-tittle">
+        <div class="features-title">
           <h2>ユアコーディング3つの特徴</h2>
           <p>FEATURES</p>
         </div>
         <div class="features-content coding">
-          <h2>高速コーディング</h2>
-          <article>
-            <img src="images/cto.png" alt="コードイメージ">
+          <h3 class="features-title">高速コーディング</h3>
+          <div class="feature-content">
+            <img src="images/cto.png" alt="特徴1">
             <div class="coding-text">
-              <h3>コーディングに特化したフリーランスのため、<br>
+              <h4>コーディングに特化したフリーランスのため、<br>
                 スピード感を持った開発が可能。
-              </h3>
+              </h4>
               <p>開発は常にスピードとの勝負です。<br>
                 ユアコーディングはコーディングに特化しているため、<br>
                 素早く納品することで、クライアントがデザインに注力<br>
                 する助けとなります。
               </p>
             </div>
-          </article>
+          </div>
         </div>
         <div class="features-content high-quality">
-          <h2>高品質</h2>
-          <article>
-            <img src="images/building_website.png" alt="コードイメージ">
-            <div class="text">
-              <h3>正しいマークアップで、<br>
+          <h3 class="features-title">高品質</h3>
+          <div class="feature-content">
+            <img src="images/building_website.png" alt="特徴2">
+            <div class="high-quality-text">
+              <h4>正しいマークアップで、<br>
                 内部SEOに強いコーディングを<br>
                 デフォルトで行います。<br>
-              </h3>
+              </h4>
               <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」<br>
                 「保守しやすい」「拡張しやすい」と言った設計をもとに<br>
-                きちんとコーディングを行うため、納品後も安心です。<br>
+                きちんとコーディングを行うため、納品後も安心です。
               </p>
             </div>
-          </article>
+          </div>
         </div>
         <div class="features-content response">
-          <h2>迅速なレスポンス</h2>
-          <article>
-            <img src="images/cto.png" alt="コードイメージ">
+          <h3 class="features-title">迅速なレスポンス</h3>
+          <div class="feature-content">
+            <img src="images/new_message.png" alt="特徴3">
             <div class="response-text">
-              <h3>
-                原則いただいたメッセージは、<br>
+              <h4>原則いただいたメッセージは、<br>
                 業務時間内であれば6時間以内に<br>
                 お返しいたします。
-              </h3>
-              <p>
-                連絡を返さないフリーランスが多い中、<br>
+              </h4>
+              <p>連絡を返さないフリーランスが多い中、<br>
                 ユアコーディングでは定期的な進捗報告など、<br>
                 社会人としての基本を踏まえて仕事を行なって<br>
                 おります。
               </p>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
+    <section class="price">
+      <div class="price-inner">
+        <div class="section-title">
+          <h2>価格</h2>
+          <p>PRICE</p>
+        </div>
+        <table>
+          <tr>
+            <th>HTMLコーディングトップページ</th>
+            <td>30.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTMLコーディング下層1ページ</th>
+            <td>10.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTML+WordPressトップページ</th>
+            <td>55.000円〜</td>
+          </tr>
+          <tr>
+            <th>HTML+WordPress下層1ページ</th>
+            <td>15.000円〜</td>
+          </tr>
+        </table>
+        <div class="notice">
+          <p>＊詳細な価格はページや仕様によって異なります</p>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="faq-inner">
+        <div class="section-title">
+          <h2>よくある質問</h2>
+          <p>FAQ</p>
+        </div>
+        <dl class="accordion">
+          <dd>デザインから一貫してお願いすることは可能でしょうか</dd>
+          <dt class="q1">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
+            ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</dt>
+          <dd>WordPressのカスタマイズをお願いすることも可能でしょうか？</dd>
+          <dt class="q2">可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dt>
+          <dd>コーディングのスピード感が知りたい</dd>
+          <dt class="q3">HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br>
+            なります。</dt>
+        </dl>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog-inner">
+        <div class="section-title">
+          <h2>ブログ</h2>
+          <p>BLOG</p>
+        </div>
+        <div class="cord-wrapper">
+          <a href="#" class="cord">
+            <img src="images/blog01.png" alt="blog-ing1">
+            <p>サイトをリニューアルオープンしました。</p>
+            <time datetime=”2020-01-23” itemprop=”datepublished”>2020年1月23日</time>
+          </a>
+          <a href="#" class="cord">
+            <img src="images/blog02.png" alt="blog-ing2">
+            <p>WebサイトでSEO内部施策に適したコー<br>
+                ディングでどれぐらいサイトが早くなるの<br>
+                か検証してみました</p>
+            <time datetime=”2020-01-24” itemprop=”datepublished”>2020年1月24日</time>
+          </a>
+          <a href="#" class="cord">
+            <img src="images/blog03.png" alt="blog-ing3">
+            <p>ユアコーディングではデザイナーの方を<br>
+               広く募集しています。</p>
+            <time datetime=”2020-01-25” itemprop=”datepublished”>2020年1月25日</time>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact-title">
+        <h2>お問い合わせ</h2>
+        <p>CONTACT</p>
+      </div>
+      <div class="contact-message">
+        <p>コーディングの人出が足りないとき、<br>
+          あなたの力になります</p>
+      </div>
+      <form action="">
+
+
+      </form>
+    </section>
+
 
   </main>
   <footer></footer>
