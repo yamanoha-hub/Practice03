@@ -20,5 +20,8 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "swiper": "^7.2.0"
   }
 }

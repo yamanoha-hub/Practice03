@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- グーグルフォント -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- グーグルフォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">  <!-- グーグルフォント -->
   <title>ユアコーディング</title>
   <meta name=“robots” content=“noindex”>  <!--- 検索結果に表示しない --->
   <link rel="stylesheet" href="stylesheet/reset.css">
   <link rel="stylesheet" href="sass/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- グーグルフォント -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- グーグルフォント -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">  <!-- グーグルフォント -->
+  <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">  <!-- swiper -->
 </head>
 <body>
   <header class="header">
@@ -183,6 +184,78 @@
         </div>
       </div>
     </section>
+    <section class="works">
+      <div class="section-title">
+        <h2>制作実績</h2>
+        <p>WORKS</p>
+      </div>
+      <!-- swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper"> <!-- 表示部分 -->
+          <div class="swiper-slide">  <!-- 各スライド -->
+            <div class="work-card">
+              <img src="images/works-img01.png" alt="works-img01">
+              <div class="work-text">
+                <h3>コーディングカンファレンスのイベント<br>
+                  LPの制作を行いました！</h3>
+                <p>採用技術：jQuery,WordPress<br>
+                  実装期間：4週間<br>
+                  担当コーダー：石井</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">  <!-- 各スライド -->
+            <div class="work-card">
+              <img src="images/works-img02.png" alt="works-img02">
+              <div class="work-text">
+                <h3>株式会社サンプル様採用サイトのコーデ<br>
+                  ィングを行いました！</h3>
+                <p>採用技術：jQuery,Bootstrap4<br>
+                    実装期間：2週間<br>
+                    担当コーダー：石井</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">  <!-- 各スライド -->
+            <div class="work-card">
+              <img src="images/works-img03.png" alt="works-img03">
+              <div class="work-text">
+                <h3>株式会社サンプル様通販サイトのコーデ<br>
+                  ィングを行いました！</h3>
+                <p>採用技術：jQuery,Bootstrap4<br>
+                    実装期間：6週間<br>
+                    担当コーダー：石井</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">  <!-- 各スライド -->
+            <div class="work-card">
+              <img src="images/works-img04.png" alt="works-img04">
+              <div class="work-text">
+                <h3>株式会社サンプル採用サイトのコーディ<br>
+                  ングを行いました！</h3>
+                <p>採用技術：jQuery,Bootstrap4<br>
+                    実装期間：2週間<br>
+                    担当コーダー：石井</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">  <!-- 各スライド -->
+            <div class="work-card">
+              <img src="images/works-img01.png" alt="works-img01">
+              <div class="work-text">
+                <h3>株式会社サンプル採用サイトのコーディ<br>
+                  ングを行いました！</h3>
+                <p>採用技術：jQuery,Bootstrap4<br>
+                  実装期間：2週間<br>
+                  担当コーダー：石井</p>
+              </div>
+            </div>
+          </div>
+        </div>  <!-- 表示部分 -->
+      </div>
+      <!-- swiper -->
+    </section>
     <section class="contact">
       <div class="contact-title">
         <h2>お問い合わせ</h2>
@@ -192,14 +265,77 @@
         <p>コーディングの人出が足りないとき、<br>
           あなたの力になります</p>
       </div>
-      <form action="">
-
-
+      <form class="form">
+        <div class="form__name">
+          <div class="name-text">
+            <p>お名前</p>
+            <span>必須</span>
+          </div>
+          <input type="text">
+        </div>
+        <div class="form__mail">
+          <div class="mail-text">
+            <p>メールアドレス</p>
+            <span>必須</span>
+          </div>
+          <input type="text">
+        </div>
+        <div class="form__contact">
+          <div class="contact-text">
+            <p>お問い合わせ内容</p>
+            <span>必須</span>
+          </div>
+          <textarea name="message"></textarea>
+        </div>
       </form>
+      <p class="">プライバシーポリシーに同意する</p>
+
+      <div class="btn">
+        <a href="#">送信する</a>
+      </div>
     </section>
-
-
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <h2>ユアコーディング</h2>
+    <div class="footer__praivacy">
+      <a href="#">プライバシーポリシー</a>
+      <a href="#">個人商取引法に基づく表記</a>
+    </div>
+    <p class="footer__copyright">
+      <small>&copy;ユアコーディング, All Rights Reserved.</small>
+    </p>
+  </footer>
+
+<script src="dist/js/swiper-bundle.min.js"></script>  <!-- swiper -->
+<script>
+  const swiper = new Swiper(".swiper-container", {
+    loop: true,
+    slidesPerView: 4,  // 表示するスライドの数
+    spaceBetween: 56,  // スライドの間隔
+    grabCursor: true,  // カーソル変更
+    centeredSlides: true,  //現在のスライドを中央に表示
+  
+    autoplay: {
+  		delay: 5000,  // 5s
+  		disableOnInteraction: true  // スライド操作後、自動再生を停止
+  	},
+
+    breakpoints: {
+      // 1200px以上の場合
+      1250: {
+        slidesPerView: 4,
+      },
+      // 980px以上の場合
+      980: {
+        slidesPerView: 3,
+      },
+      // 350px以上の場合
+      350: {
+        slidesPerView: 2,
+      }
+
+    }
+  });
+</script>
 </body>
 </html>

@@ -338,24 +338,129 @@ body {
 }
 // ブログ
 
+// 実績
+/* 全体のスタイル */
+
+
+
+
+.swiper-container {
+  margin-top: 69px;
+  margin-bottom: 90px;
+}
+.swiper-wrapper {
+	width: 100%;
+  height: 407px;
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .work-card {
+    height: 407px;
+    border: solid 1px #DDD;
+    border-radius: 8px;
+    .work-text {
+      padding-left: 18px;
+      h3 {
+        font-size: 16px;
+        line-height: 1.714;
+        margin-top: 24px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.714;
+        margin-top: 34px;
+        margin-bottom: 34px;
+      }
+    }
+  }
+}
+// 実績
+
 // お問い合わせ
 .contact {
   background: linear-gradient(to right, #05A5FA, #63FBD7);
   padding-top: 72px;
   padding-bottom: 70px;
-
-
-  .contact-title h2, p {
+  &-title h2,&-title p {
     color: #fff;
   }
-  .contact-message {
+  &-message {
     margin: 0 auto;
     margin-top: 42px;
+    margin-bottom: 44px;
     text-align: center;
-
+    line-height: 2;
   }
+
+  
 }
 
+.form {
+  width: 908px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 62px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  span {
+    font-size: 14px;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #0C449B;
+    border-radius: 10px;
+    margin-left: 23px;
+  }
+  input {
+    width: 499px;
+    height: 43px;
+    background-color: #EEFBFB;
+    border-radius: 3px;
+    border: none;
+  }
+  textarea {
+    width: 783px;
+    height: 179px;
+    background-color: #EEFBFB;
+    border-radius: 3px;
+    border: none;
+  }
+  &__name {
+    .name-text {
+      display: flex;
+      align-items: center;
+      padding-top: 31px;
+      padding-bottom: 36px;
+      margin-left: 1px;
+    }
+  }
+  &__mail {
+    .mail-text {
+      display: flex;
+      align-items: center;
+      padding-top: 25px;
+      padding-bottom: 35px;
+      margin-left: 1px;
+      span {
+        padding-top: 7px;
+        padding-bottom: 9px;
+      }
+    }
+  }
+
+  &__contact{
+    margin-left: 1px;
+    .contact-text {
+      display: flex;
+      align-items: center;
+      padding-top: 19px;
+      padding-bottom: 35px;
+      margin-left: 1px;
+    }
+  }
+}
 
 
 // お問い合わせ
@@ -363,13 +468,29 @@ body {
 
 
 // フッター
-footer {
+.footer {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: antiquewhite;
+  background-color: #F8F8F8;
+  text-align: center;
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  &__praivacy {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    a {
+      margin-right: 30px;
+    }
+  }
+  &__copyright {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 59px;
+  }
 }
-
-
 // フッター
 
 
