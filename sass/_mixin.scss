@@ -1,0 +1,26 @@
+// @import "_module";
+
+
+
+
+
+
+@mixin btnSet {
+  display: inline-block;
+  width: 155px;
+  max-width: 100%;
+  padding: 11px 35px;
+  background: $btn-gradient;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 1.25;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+
+
+
+

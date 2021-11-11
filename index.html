@@ -9,17 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">  <!-- グーグルフォント -->
   <title>ユアコーディング</title>
   <meta name=“robots” content=“noindex”>  <!--- 検索結果に表示しない --->
-  <link rel="stylesheet" href="stylesheet/reset.css">
+  <link rel="stylesheet" href="stylesheet/reset.css">  <!-- リセットCSS -->
   <link rel="stylesheet" href="sass/style.css">
   <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">  <!-- swiper -->
 </head>
 <body>
   <header class="header">
-    <div class="header-inner">
+    <div class="header__inner">
       <div class="header-logo">
-        <img src="images/logo.png" alt="ロゴ">
+        <img src="images/logo.png" alt="企業ロゴ">
         <h1>ユアコーディング</h1>
       </div>
+      <!-- /header_logo -->
       <nav class="header-nav">
         <ul>
           <li><a href="#">特徴</a></li>
@@ -27,14 +28,18 @@
           <li><a href="#">お問い合わせ</a></li>
         </ul>
       </nav>
+      <!-- /header -->
       <div class="header-btn">
         <a href="#" class="contact-btn">お問い合わせ</a>
       </div>
+      <!-- /header-btn -->
     </div>
+    <!-- /header-inner -->
   </header>
+  <!-- /header -->
   <main>
-    <section class="mv">
-      <div class="mv-inner">
+    <section class="mv mv__bg">
+      <div class="mv__inner">
         <div class="mv-text">
           <h2>コーディングの手間を<br>
             最小に、デザインに注力<br>
@@ -47,19 +52,22 @@
           </p>
           <a href="#" class="contact-btn">お問い合わせ</a>
         </div>
-        <div class="mv-img">
-          <img src="images/manager.png" alt="">
+        <div class="mv__img">
+          <img src="images/manager.png" alt="メインビジュアル画像">
         </div>
       </div>
+      <!-- /.mv__inner -->
     </section>
+    <!-- /mv mv__bg -->
     <section class="features">
-      <div class="features-inner">
-        <div class="features-title">
+      <div class="features__inner">
+        <div class="section__ttl">
           <h2>ユアコーディング3つの特徴</h2>
           <p>FEATURES</p>
         </div>
+        <!-- /section__ttl -->
         <div class="features-content coding">
-          <h3 class="features-title">高速コーディング</h3>
+          <h3 class="features__ttl">高速コーディング</h3>
           <div class="feature-content">
             <img src="images/cto.png" alt="特徴1">
             <div class="coding-text">
@@ -74,6 +82,7 @@
             </div>
           </div>
         </div>
+        <!-- /.features-content coding -->
         <div class="features-content high-quality">
           <h3 class="features-title">高品質</h3>
           <div class="feature-content">
@@ -90,6 +99,7 @@
             </div>
           </div>
         </div>
+        <!-- /.features-content high-quality -->
         <div class="features-content response">
           <h3 class="features-title">迅速なレスポンス</h3>
           <div class="feature-content">
@@ -107,11 +117,14 @@
             </div>
           </div>
         </div>
+        <!-- /.features-content response -->
       </div>
+      <!-- /.features-inner -->
     </section>
+    <!-- /.features -->
     <section class="price">
-      <div class="price-inner">
-        <div class="section-title">
+      <div class="price__inner">
+        <div class="section__ttl">
           <h2>価格</h2>
           <p>PRICE</p>
         </div>
@@ -133,32 +146,34 @@
             <td>15.000円〜</td>
           </tr>
         </table>
-        <div class="notice">
+        <div class="price__inner__notice">
           <p>＊詳細な価格はページや仕様によって異なります</p>
         </div>
       </div>
+      <!-- /price-inner -->
     </section>
+    <!-- /price -->
     <section class="faq">
-      <div class="faq-inner">
-        <div class="section-title">
+      <div class="faq__inner">
+        <div class="section__ttl">
           <h2>よくある質問</h2>
           <p>FAQ</p>
         </div>
-        <dl class="accordion">
+        <dl class="faq__inner__accordion">
           <dd>デザインから一貫してお願いすることは可能でしょうか</dd>
-          <dt class="q1">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
+          <dt class="a1">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
             ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</dt>
           <dd>WordPressのカスタマイズをお願いすることも可能でしょうか？</dd>
-          <dt class="q2">可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dt>
+          <dt class="a2">可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dt>
           <dd>コーディングのスピード感が知りたい</dd>
-          <dt class="q3">HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br>
+          <dt class="a3">HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br>
             なります。</dt>
         </dl>
       </div>
     </section>
     <section class="blog">
-      <div class="blog-inner">
-        <div class="section-title">
+      <div class="blog__inner">
+        <div class="section__ttl">
           <h2>ブログ</h2>
           <p>BLOG</p>
         </div>
@@ -185,7 +200,7 @@
       </div>
     </section>
     <section class="works">
-      <div class="section-title">
+      <div class="section__ttl">
         <h2>制作実績</h2>
         <p>WORKS</p>
       </div>
@@ -257,14 +272,15 @@
       <!-- swiper -->
     </section>
     <section class="contact">
-      <div class="contact-title">
+      <div class="section__ttl">
         <h2>お問い合わせ</h2>
         <p>CONTACT</p>
       </div>
-      <div class="contact-message">
+      <div class="contact__message">
         <p>コーディングの人出が足りないとき、<br>
           あなたの力になります</p>
       </div>
+      <!-- /contact__message -->
       <form class="form">
         <div class="form__name">
           <div class="name-text">
@@ -273,6 +289,7 @@
           </div>
           <input type="text">
         </div>
+        <!-- /form__name -->
         <div class="form__mail">
           <div class="mail-text">
             <p>メールアドレス</p>
@@ -280,6 +297,7 @@
           </div>
           <input type="text">
         </div>
+        <!-- /form__mail -->
         <div class="form__contact">
           <div class="contact-text">
             <p>お問い合わせ内容</p>
@@ -287,24 +305,30 @@
           </div>
           <textarea name="message"></textarea>
         </div>
+        <!-- /form__contact -->
+        <div class="contact__magu">
+          <p class="">プライバシーポリシーに同意する</p>
+          <a class="contact-btn" href="#">送信する</a>
+        </div>
       </form>
-      <p class="">プライバシーポリシーに同意する</p>
-
-      <div class="btn">
-        <a href="#">送信する</a>
-      </div>
     </section>
+    <!-- /contact -->
   </main>
   <footer class="footer">
-    <h2>ユアコーディング</h2>
-    <div class="footer__praivacy">
-      <a href="#">プライバシーポリシー</a>
-      <a href="#">個人商取引法に基づく表記</a>
+    <div class="footer__inner">
+      <h2>ユアコーディング</h2>
+      <div class="footer__praivacy">
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">個人商取引法に基づく表記</a>
+      </div>
     </div>
-    <p class="footer__copyright">
-      <small>&copy;ユアコーディング, All Rights Reserved.</small>
-    </p>
+    <!-- /.footer-inner -->
+    <div  class="footer__inner">
+      <small class="footer__copyright">&copy;ユアコーディング, All Rights Reserved.</small>
+    </div>
+    <!-- /.footer-inner -->
   </footer>
+  <!-- /.footer -->
 
 <script src="dist/js/swiper-bundle.min.js"></script>  <!-- swiper -->
 <script>
