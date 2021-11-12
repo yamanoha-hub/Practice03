@@ -134,19 +134,21 @@
               <th class="horizontal-table__header">HTMLコーディングトップページ</th>
               <td class="horizontal-table__text">30.000円〜</td>
             </tr>
-            <tr>
+            <tr class="horizontal__row">
               <th class="horizontal-table__header">HTMLコーディング下層1ページ</th>
               <td class="horizontal-table__text">10.000円〜</td>
             </tr>
-            <tr>
+            <tr class="horizontal__row">
               <th class="horizontal-table__header">HTML+WordPressトップページ</th>
               <td class="horizontal-table__text">55.000円〜</td>
             </tr>
-            <tr>
+            <tr class="horizontal__row">
               <th class="horizontal-table__header">HTML+WordPress下層1ページ</th>
               <td class="horizontal-table__text">15.000円〜</td>
             </tr>
+            <!-- /horizontal__row -->
           </table>
+          <!-- /horizontal-table__inner -->
         </div>
         <!-- /horizontal-table -->
         <div class="price__inner__notice">
@@ -162,18 +164,36 @@
           <h2>よくある質問</h2>
           <p>FAQ</p>
         </div>
-        <dl class="faq__inner__accordion">
-          <dd>デザインから一貫してお願いすることは可能でしょうか</dd>
-          <dt class="a1">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
-            ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</dt>
-          <dd>WordPressのカスタマイズをお願いすることも可能でしょうか？</dd>
-          <dt class="a2">可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dt>
-          <dd>コーディングのスピード感が知りたい</dd>
-          <dt class="a3">HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br>
-            なります。</dt>
+        <dl class="accordion">
+          <dt class="accordion__ttl">
+            <button class="accordion__btn accordion__btn--active" type="button">デザインから一貫してお願いすることは可能でしょうか</button>
+          </dt>
+          <dd class="accordion__body accordion__body--active">
+            <p class="accordion__text">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
+              ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+            </p>
+          </dd>
+          <dt class="accordion__ttl">
+            <button class="accordion__btn" type="button">WordPressのカスタマイズをお願いすることも可能でしょうか？</button>
+          </dt>
+          <dd class="accordion__body">
+            <p class="accordion__text">可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
+            </p>
+          </dd>
+          <dt class="accordion__ttl">
+            <button class="accordion__btn" type="button">コーディングのスピード感が知りたい</button>
+          </dt>
+          <dd class="accordion__body">
+            <p class="accordion__text">HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br>
+              なります。
+            </p>
+          </dd>
         </dl>
+        <!-- /faq__inner__accordion -->
       </div>
+      <!-- /faq__inner -->
     </section>
+    <!-- /faq -->
     <section class="blog">
       <div class="blog__inner">
         <div class="section__ttl">
@@ -200,8 +220,11 @@
             <time datetime=”2020-01-25” itemprop=”datepublished”>2020年1月25日</time>
           </a>
         </div>
+        <!-- /cords -->
       </div>
+      <!-- /blog__inner -->
     </section>
+    <!-- /blog -->
     <section class="works">
       <div class="section__ttl">
         <h2>制作実績</h2>

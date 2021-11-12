@@ -326,40 +326,57 @@ img {
   margin: 0 auto;
 }
 
-.faq__inner__accordion {
+.faq .accordion {
   margin-top: 33px;
   font-size: 14px;
   line-height: 1.86;
 }
 
-.faq__inner__accordion dd {
+.faq .accordion__ttl {
   height: 58px;
-  line-height: 58px;
-  text-align: center;
   border: solid 1px #E5E5E5;
 }
 
-.faq__inner__accordion dt {
+.faq .accordion__btn {
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 58px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.faq .accordion__body {
+  display: none;
   background-color: #F2F2F2;
   border: solid 1px #E5E5E5;
 }
 
-.faq__inner__accordion .a1 {
-  height: 93px;
+.faq .accordion__body:nth-of-type(1) {
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-bottom: 26px;
+}
+
+.faq .accordion__body:nth-of-type(2) {
   padding-top: 21px;
   padding-left: 35px;
+  padding-bottom: 22px;
 }
 
-.faq__inner__accordion .a2 {
-  height: 70px;
-  line-height: 70px;
-  padding-left: 35px;
-}
-
-.faq__inner__accordion .a3 {
-  height: 96px;
-  padding-top: 28px;
+.faq .accordion__body:nth-of-type(3) {
+  padding-top: 22px;
   padding-left: 37px;
+  padding-bottom: 22px;
+}
+
+.faq .accordion__body--active {
+  display: block;
 }
 
 .blog {
