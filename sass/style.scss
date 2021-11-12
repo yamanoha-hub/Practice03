@@ -361,10 +361,11 @@
   }
   &__message {
     color: #fff;
-    margin-top: 42px;
-    margin-bottom: 44px;
-    text-align: center;
+    font-size: 16px;
     line-height: 2;
+    text-align: center;
+    margin-top: 42px - 8px;
+    margin-bottom: 44px - 8px;
   }
   
   .form {
@@ -372,71 +373,78 @@
     box-sizing: border-box;
     margin: 0 auto;
     background-color: #fff;
-    padding-left: 62px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    .pl1 {
+      padding-left: 1px;
+    }
     span {
+      color: #fff;
       font-size: 14px;
       padding: 8px 16px;
-      color: #fff;
       background-color: #0C449B;
       border-radius: 10px;
       margin-left: 23px;
     }
-    input {
+    input, textarea {
       width: 499px;
       height: 43px;
-      background-color: #EEFBFB;
+      background-color: $bg-color;
       border-radius: 3px;
       border: none;
     }
     textarea {
       width: 783px;
       height: 179px;
-      background-color: #EEFBFB;
-      border-radius: 3px;
-      border: none;
     }
     &__name {
+      padding-left: 62px;
       .name-text {
         display: flex;
         align-items: center;
         padding-top: 31px;
         padding-bottom: 36px;
-        margin-left: 1px;
       }
     }
     &__mail {
+      padding-left: 62px;
       .mail-text {
         display: flex;
         align-items: center;
         padding-top: 25px;
         padding-bottom: 35px;
-        margin-left: 1px;
-        span {
+        span { //調整
           padding-top: 7px;
           padding-bottom: 9px;
+          margin-left: 22px;
         }
       }
     }
-    
-    &__contact{
-      margin-left: 1px;
+    &__contact {
+      padding-left: 63px;
       .contact-text {
         display: flex;
         align-items: center;
         padding-top: 19px;
         padding-bottom: 35px;
-        margin-left: 1px;
       }
     }
   }
   &__magu {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
-    p {
+    padding-bottom: 35px;
+    &__agree {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 31px;
       padding-left: 1px;
+      input[type="checkbox"] {
+        width: 20px;
+      }
+      .privacy {
+        margin-left: 10px;
+      }
     }
   }
 }

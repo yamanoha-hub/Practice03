@@ -476,10 +476,11 @@ img {
 
 .contact__message {
   color: #fff;
-  margin-top: 42px;
-  margin-bottom: 44px;
-  text-align: center;
+  font-size: 16px;
   line-height: 2;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 36px;
 }
 
 .contact .form {
@@ -488,21 +489,24 @@ img {
           box-sizing: border-box;
   margin: 0 auto;
   background-color: #fff;
-  padding-left: 62px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
+.contact .form .pl1 {
+  padding-left: 1px;
+}
+
 .contact .form span {
+  color: #fff;
   font-size: 14px;
   padding: 8px 16px;
-  color: #fff;
   background-color: #0C449B;
   border-radius: 10px;
   margin-left: 23px;
 }
 
-.contact .form input {
+.contact .form input, .contact .form textarea {
   width: 499px;
   height: 43px;
   background-color: #EEFBFB;
@@ -513,9 +517,10 @@ img {
 .contact .form textarea {
   width: 783px;
   height: 179px;
-  background-color: #EEFBFB;
-  border-radius: 3px;
-  border: none;
+}
+
+.contact .form__name {
+  padding-left: 62px;
 }
 
 .contact .form__name .name-text {
@@ -527,7 +532,10 @@ img {
           align-items: center;
   padding-top: 31px;
   padding-bottom: 36px;
-  margin-left: 1px;
+}
+
+.contact .form__mail {
+  padding-left: 62px;
 }
 
 .contact .form__mail .mail-text {
@@ -539,16 +547,16 @@ img {
           align-items: center;
   padding-top: 25px;
   padding-bottom: 35px;
-  margin-left: 1px;
 }
 
 .contact .form__mail .mail-text span {
   padding-top: 7px;
   padding-bottom: 9px;
+  margin-left: 22px;
 }
 
 .contact .form__contact {
-  margin-left: 1px;
+  padding-left: 63px;
 }
 
 .contact .form__contact .contact-text {
@@ -560,18 +568,34 @@ img {
           align-items: center;
   padding-top: 19px;
   padding-bottom: 35px;
-  margin-left: 1px;
 }
 
 .contact__magu {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 
-.contact__magu p {
+.contact__magu__agree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 31px;
   padding-left: 1px;
+}
+
+.contact__magu__agree input[type="checkbox"] {
+  width: 20px;
+}
+
+.contact__magu__agree .privacy {
+  margin-left: 10px;
 }
 
 .footer {
