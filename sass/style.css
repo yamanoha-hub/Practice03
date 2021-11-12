@@ -30,6 +30,10 @@ img {
   line-height: 1.19;
 }
 
+.section__ttl .mt23 {
+  margin-top: 23px;
+}
+
 .contact-btn {
   display: inline-block;
   width: 155px;
@@ -86,19 +90,23 @@ img {
   margin-left: 16px;
 }
 
-.header-nav ul {
+.header-nav__item {
   margin-left: 136px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header-nav ul li {
+.header-nav__item li {
   margin-right: 49px;
   font-size: 16px;
 }
 
-.header-nav ul li:last-child {
+.header-nav__item li a {
+  color: #333;
+}
+
+.header-nav__item li:last-child {
   margin-right: 0;
 }
 
@@ -124,23 +132,19 @@ img {
           justify-content: center;
 }
 
-.mv-text {
+.mv__text {
   margin-right: 133px;
 }
 
-.mv-text h2 {
+.mv__text h2 {
   font-size: 32px;
   line-height: 1.68;
-  margin-top: 37px;
-  margin-bottom: 38px;
-  height: 140px;
-  position: relative;
-  top: -11px;
+  margin-top: 26px;
+  margin-bottom: 27px;
 }
 
-.mv-text p {
-  margin-bottom: 39px;
-  height: 97px;
+.mv__text p {
+  margin-bottom: 33.5px;
   line-height: 1.68;
 }
 
@@ -167,32 +171,30 @@ img {
   font-size: 28px;
 }
 
-.coding h3 {
-  margin-top: 65px;
-  margin-bottom: 54px;
-}
-
-.coding .feature-content {
+.features__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.coding .feature-content img {
+.features__content img {
   margin-right: 157px;
 }
 
+.coding h3 {
+  margin-top: 65px;
+  margin-bottom: 54px;
+}
+
 .coding-text {
-  position: relative;
-  top: -12px;
   padding-right: 28.5px;
 }
 
 .coding-text h4 {
-  height: 72px;
   font-size: 24px;
-  margin: 54px 0;
   line-height: 2;
+  margin-top: 42px;
+  margin-bottom: 37px;
 }
 
 .coding-text p {
@@ -219,17 +221,11 @@ img {
   margin-left: 84px;
 }
 
-.high-quality-text {
-  position: relative;
-  top: -12px;
-}
-
 .high-quality-text h4 {
-  height: 120px;
   font-size: 24px;
-  margin-top: 9px;
-  margin-bottom: 49px;
   line-height: 2;
+  margin-top: -3px;
+  margin-bottom: 32px;
 }
 
 .high-quality-text p {
@@ -252,17 +248,11 @@ img {
   margin-right: 173px;
 }
 
-.response-text {
-  position: relative;
-  top: -12px;
-}
-
 .response-text h4 {
-  height: 120px;
   font-size: 24px;
-  margin-top: 27px;
-  margin-bottom: 42px;
   line-height: 2;
+  margin-top: 15px;
+  margin-bottom: 24px;
 }
 
 .response-text p {
@@ -322,8 +312,8 @@ img {
 }
 
 .faq__inner {
-  max-width: 907px;
   margin: 0 auto;
+  max-width: 907px;
 }
 
 .faq .accordion {

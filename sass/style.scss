@@ -1,6 +1,7 @@
 @import "_module", "_mixin";
 
-// カードまとめる
+// cardまとめる
+// half-leadingの調整をなくす
 
 .contact-btn {
   @include btnSet;
@@ -36,12 +37,15 @@
     }
   }
 
-  &-nav ul {
+  &-nav__item {
     margin-left: 136px;
     display: flex;
     li {
       margin-right: 49px;
       font-size: 16px;
+      a {
+        color: $color-font;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -64,20 +68,16 @@
     display: flex;
     justify-content: center;
   }
-  &-text {
+  &__text {
     margin-right: 133px;
-    h2 {
+    h2 { //22 37
       font-size: 32px;
       line-height: 1.68;
-      margin-top: 37px;
-      margin-bottom: 38px;
-      height: 140px;
-      position: relative;
-      top: -11px; // half-leadingの調整
+      margin-top: 37px - 11px;
+      margin-bottom: 38px - 11px;
     }
-    p {
-      margin-bottom: 39px;
-      height: 97px;
+    p { //11 39
+      margin-bottom: 39px - 5.5px;
       line-height: 1.68;
     }
   }
@@ -97,6 +97,12 @@
     text-align: center;
     font-size: 28px;
   }
+  &__content {
+    display: flex;
+    img {
+      margin-right: 157px;
+    }
+  }
 }
 
 .coding {
@@ -104,22 +110,14 @@
     margin-top: 65px;
     margin-bottom: 54px;
   }
-  .feature-content {
-    display: flex;
 
-    img {
-      margin-right: 157px;
-    }
-  }
   &-text {
-    position: relative;
-    top: -12px; // half-leadingの調整
     padding-right: 28.5px;
     h4 {
-      height: 72px;
       font-size: 24px;
-      margin: 54px 0;
       line-height: 2;
+      margin-top: 54px - 12px;
+      margin-bottom: 54px - 12px -5px;
     }
     p {
       line-height: 1.625;
@@ -140,15 +138,12 @@
       margin-left: 84px;
     }
   }
-  &-text {
-    position: relative;
-    top: -12px; // half-leadingの調整
+  &-text { //9 
     h4 {
-      height: 120px;
       font-size: 24px;
-      margin-top: 9px;
-      margin-bottom: 49px;
       line-height: 2;
+      margin-top: 9px - 12px;
+      margin-bottom: 49px - 12px - 5px;
     }
     p {
       line-height: 1.625;
@@ -169,14 +164,11 @@
     }
   }
   &-text {
-    position: relative;
-    top: -12px; // half-leadingの調整
-    h4 {
-      height: 120px;
+    h4 { //27
       font-size: 24px;
-      margin-top: 27px;
-      margin-bottom: 42px;
       line-height: 2;
+      margin-top: 27px - 12px;
+      margin-bottom: 42px - 12px - 6px;
     }
     p {
       line-height: 1.625;
@@ -188,7 +180,7 @@
 
 // 価格
 .price {
-  background-color: #EEFBFB;
+  background-color: $bg-color;
   padding-top: 64px;
   padding-bottom: 71px;
   &__inner {
@@ -232,8 +224,8 @@
   padding-top: 64px;
   padding-bottom: 86px;
   &__inner {
-    max-width: 907px;
     margin: 0 auto;
+    max-width: 907px;
   }
   .accordion {
     margin-top: 33px;
@@ -285,7 +277,7 @@
 
 // ブログ
 .blog {
-  background-color: #EEFBFB;
+  background-color: $bg-color;
   padding-top: 64px;
   padding-bottom: 91px;
   &__inner {

@@ -1,11 +1,10 @@
 // $bgc: #EEFBFB;
 
 
-// $width-base: 1366px;
 $main-color: #3BA6C9;
 $color-font: #333;
 $btn-gradient: linear-gradient(to right, #FA41CC, #6020B0);
-
+$bg-color: #EEFBFB;
 // ============================================
 // ベース
 // ============================================
@@ -37,6 +36,9 @@ img {
     margin-top: 19px;
     line-height: 1.19;
   }
+  
+  .mt23 {
+    margin-top: 23px;
+  }
 }
-
 
