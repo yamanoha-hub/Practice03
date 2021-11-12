@@ -368,18 +368,20 @@ img {
   margin: 0 auto;
 }
 
-.cord-wrapper {
+.cords {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.cords .cord--col3 {
   margin-top: 55px;
 }
 
-.cord {
-  max-width: 389px;
+.cords__item {
   height: 387px;
   position: relative;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -387,12 +389,12 @@ img {
   background-color: #fff;
 }
 
-.cord p {
+.cords__item p {
   padding-top: 19px;
   padding-left: 18px;
 }
 
-.cord time {
+.cords__item time {
   position: absolute;
   right: 38px;
   bottom: 11px;

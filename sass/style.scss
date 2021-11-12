@@ -275,25 +275,27 @@
     margin: 0 auto;
   }
 }
-.cord-wrapper {
+.cords {
   display: flex;
   justify-content: space-between;
-  margin-top: 55px;
-}
-.cord {
-  max-width: 389px;
-  height: 387px;
-  position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  background-color: #fff;
-  p {
-    padding-top: 19px;
-    padding-left: 18px;
+  .cord--col3 {
+    margin-top: 55px;
   }
-  time {
-    position: absolute;
-    right: 38px;
-    bottom: 11px;
+  &__item {
+    height: 387px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+
+    p {
+      padding-top: 19px;
+      padding-left: 18px;
+    }
+    time {
+      position: absolute;
+      right: 38px;
+      bottom: 11px;
+    }
   }
 }
 // ブログ
