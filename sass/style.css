@@ -287,17 +287,22 @@ img {
   padding-top: 41px;
 }
 
-.price table {
+.price .horizontal-table {
   margin-top: 71px;
   padding-left: 1px;
+}
+
+.price .horizontal-table__inner {
+  width: 100%;
   background-color: #fff;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-.price table th {
-  display: inline-block;
+.price .horizontal-table__header {
   width: 290px;
+  display: inline-block;
+  font-weight: bold;
   padding-top: 40px;
   padding-left: 19px;
   padding-bottom: 38px;
@@ -305,7 +310,7 @@ img {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.price table td {
+.price .horizontal-table__text {
   width: 636px;
   padding-left: 30px;
   border-bottom: 1px solid #E5E5E5;

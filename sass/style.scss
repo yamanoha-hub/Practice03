@@ -199,25 +199,29 @@
       padding-top: 41px;
     }
   }
-  table {
+  .horizontal-table {
     margin-top: 71px;
     padding-left: 1px;
-    background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    th {
-      display: inline-block;
+    &__inner {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__header {
       width: 290px;
+      display: inline-block;
+      font-weight: bold;
       padding-top: 40px;
       padding-left: 19px;
       padding-bottom: 38px;
       border-right: 1px solid #E5E5E5;
       border-bottom: 1px solid #E5E5E5;
     }
-    td {
+    &__text {
       width: 636px;
       padding-left: 30px;
       border-bottom: 1px solid #E5E5E5;
-    }
+    }  
   }
 }
 // 価格
