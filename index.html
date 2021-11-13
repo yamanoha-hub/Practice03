@@ -244,8 +244,10 @@
       </div>
       <!-- swiper -->
       <div class="swiper-container">
-        <div class="swiper-wrapper"> <!-- 表示部分 -->
-          <div class="swiper-slide">  <!-- 各スライド -->
+        <!-- 表示部分 -->
+        <div class="swiper-wrapper">
+          <!-- 各スライド -->
+          <div class="swiper-slide"> 
             <div class="work-card">
               <img src="images/works-img01.png" alt="works-img01">
               <div class="work-text">
@@ -257,7 +259,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">  <!-- 各スライド -->
+          <!-- 各スライド -->
+          <div class="swiper-slide">
             <div class="work-card">
               <img src="images/works-img02.png" alt="works-img02">
               <div class="work-text">
@@ -269,7 +272,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">  <!-- 各スライド -->
+          <!-- 各スライド -->
+          <div class="swiper-slide">
             <div class="work-card">
               <img src="images/works-img03.png" alt="works-img03">
               <div class="work-text">
@@ -281,7 +285,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">  <!-- 各スライド -->
+          <!-- 各スライド -->
+          <div class="swiper-slide"> 
             <div class="work-card">
               <img src="images/works-img04.png" alt="works-img04">
               <div class="work-text">
@@ -293,7 +298,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">  <!-- 各スライド -->
+          <!-- 各スライド -->
+          <div class="swiper-slide"> 
             <div class="work-card">
               <img src="images/works-img01.png" alt="works-img01">
               <div class="work-text">
@@ -377,10 +383,14 @@
 <script>
   const swiper = new Swiper(".swiper-container", {
     loop: true,
-    slidesPerView: 4,  // 表示するスライドの数
-    spaceBetween: 56,  // スライドの間隔
-    grabCursor: true,  // カーソル変更
-    centeredSlides: true,  //現在のスライドを中央に表示
+    // 表示するスライドの数
+    slidesPerView: 4, 
+    // スライドの間隔
+    spaceBetween: 56, 
+    // カーソル変更
+    grabCursor: true,
+    //現在のスライドを中央に表示
+    centeredSlides: true,
   
     autoplay: {
   		delay: 5000,  // 5s
