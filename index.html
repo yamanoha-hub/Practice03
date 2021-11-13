@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="sass/style.css">
   <script src="/js/jquery-3.6.0.min.js"></script>  <!-- jQuery -->
   <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">  <!-- swiper -->
+  <link href="dist/css/aos.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -62,12 +63,12 @@
     <!-- /mv mv__bg -->
     <section class="features">
       <div class="features__inner">
-        <div class="section__ttl">
+        <div class="section__ttl" data-aos="fade-up">
           <h2>ユアコーディング3つの特徴</h2>
           <p>FEATURES</p>
         </div>
         <!-- /section__ttl -->
-        <div class="features-content coding">
+        <div class="features-content coding"  data-aos="fade-right">
           <h3 class="features__ttl">高速コーディング</h3>
           <div class="features__content">
             <img src="images/cto.png" alt="特徴1">
@@ -84,7 +85,7 @@
           </div>
         </div>
         <!-- /.features-content coding -->
-        <div class="features-content high-quality">
+        <div class="features-content high-quality"  data-aos="fade-left">
           <h3 class="features__ttl">高品質</h3>
           <div class="feature-content">
             <img src="images/building_website.png" alt="特徴2">
@@ -101,7 +102,7 @@
           </div>
         </div>
         <!-- /.features-content high-quality -->
-        <div class="features-content response">
+        <div class="features-content response"  data-aos="fade-right">
           <h3 class="features__ttl">迅速なレスポンス</h3>
           <div class="feature-content">
             <img src="images/new_message.png" alt="特徴3">
@@ -125,11 +126,11 @@
     <!-- /.features -->
     <section class="price">
       <div class="price__inner">
-        <div class="section__ttl">
+        <div class="section__ttl" data-aos="fade-up">
           <h2>価格</h2>
           <p class="mt23">PRICE</p>
         </div>
-        <div class="horizontal-table">
+        <div class="horizontal-table" data-aos="flip-left">
           <table class="horizontal-table__inner">
             <tr class="horizontal__row">
               <th class="horizontal-table__header">HTMLコーディングトップページ</th>
@@ -161,11 +162,11 @@
     <!-- /price -->
     <section class="faq">
       <div class="faq__inner">
-        <div class="section__ttl">
+        <div class="section__ttl" data-aos="fade-up">
           <h2>よくある質問</h2>
           <p class="mt23">FAQ</p>
         </div>
-        <dl class="accordion">
+        <dl class="accordion" data-aos="zoom-in">
           <dt class="accordion__ttl">
             <button class="accordion__btn" type="button">デザインから一貫してお願いすることは可能でしょうか</button>
           </dt>
@@ -197,11 +198,11 @@
     <!-- /faq -->
     <section class="blog">
       <div class="blog__inner">
-        <div class="section__ttl">
+        <div class="section__ttl" data-aos="fade-up">
           <h2>ブログ</h2>
           <p>BLOG</p>
         </div>
-        <div class="cords">
+        <div class="cords" data-aos="zoom-out">
           <a href="#" class="cords__item cord--col3">
             <img src="images/blog01.png" alt="blog-ing1">
             <p>サイトをリニューアルオープンしました。</p>
@@ -390,6 +391,15 @@
       }
 
     }
+  });
+</script>
+<script src="dist/js/aos.js"></script>
+<script>
+  AOS.init({
+    disable: 'phone',  //スマートフォンのみ無効
+    offset: 200,       //動き始めまでの距離(px)
+    delay: 100,        //動き始めまでの時間(ms)
+    duration: 700      //アニメーションの時間(ms)
   });
 </script>
 </body>
