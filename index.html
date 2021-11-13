@@ -11,6 +11,7 @@
   <meta name=“robots” content=“noindex”>  <!--- 検索結果に表示しない --->
   <link rel="stylesheet" href="stylesheet/reset.css">  <!-- リセットCSS -->
   <link rel="stylesheet" href="sass/style.css">
+  <script src="/js/jquery-3.6.0.min.js"></script>  <!-- jQuery -->
   <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">  <!-- swiper -->
 </head>
 <body>
@@ -30,7 +31,7 @@
       </nav>
       <!-- /header-nav -->
       <div class="header-btn">
-        <a href="#" class="contact-btn">お問い合わせ</a>
+        <a href="#contact" class="contact-btn">お問い合わせ</a>
       </div>
       <!-- /header-btn -->
     </div>
@@ -50,7 +51,7 @@
             デザインに注力されたい方の<br>
             助けになります
           </p>
-          <a href="#" class="contact-btn">お問い合わせ</a>
+          <a href="#contact" class="contact-btn">お問い合わせ</a>
         </div>
         <div class="mv__img">
           <img src="images/manager.png" alt="メインビジュアル画像">
@@ -166,7 +167,7 @@
         </div>
         <dl class="accordion">
           <dt class="accordion__ttl">
-            <button class="accordion__btn accordion__btn--active" type="button">デザインから一貫してお願いすることは可能でしょうか</button>
+            <button class="accordion__btn" type="button">デザインから一貫してお願いすることは可能でしょうか</button>
           </dt>
           <dd class="accordion__body accordion__body--active">
             <p class="accordion__text">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>
@@ -297,7 +298,7 @@
       </div>
       <!-- swiper -->
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="section__ttl">
         <h2>お問い合わせ</h2>
         <p>CONTACT</p>
@@ -359,6 +360,7 @@
   </footer>
   <!-- /.footer -->
 
+<script src="/js/script.js"></script>
 <script src="dist/js/swiper-bundle.min.js"></script>  <!-- swiper -->
 <script>
   const swiper = new Swiper(".swiper-container", {
