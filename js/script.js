@@ -21,4 +21,8 @@ $(function() {
     // }
   });
 
+  // メニューバー
+  $(".hamburger").click(function() {
+    $(this).toggleClass('hamburger__active');
+  });
 });

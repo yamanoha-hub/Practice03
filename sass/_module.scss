@@ -1,9 +1,28 @@
-// $bgc: #EEFBFB;
+// ============================================
+// 変数
+// ============================================
 
 $main-color: #3BA6C9;
 $color-font: #333;
 $btn-gradient: linear-gradient(to right, #FA41CC, #6020B0);
 $bg-color: #EEFBFB;
+
+// ============================================
+// メディアクエリ
+// ============================================
+
+$breakpoints: (
+  m: "only screen and (max-width: 1100px)", //タブレット
+  s: "only screen and (max-width: 599px)",  //スマートフォン
+);
+
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
 // ============================================
 // ベース
 // ============================================
@@ -13,31 +32,71 @@ body {
   font-weight: bold;
   font-family: 'Noto Sans JP', sans-serif;
 }
-
 img {
   max-width: 100%;
 }
-
 .mv__bg {
   background-image: url(../images/bg-circle.png);
   background-repeat: no-repeat;
   background-position: top -161px right -85px;
+  @include media(m) {
+    background-position: top -230px right -160px;
+  }
+  @include media(s) {
+    background-position: top -400px right -320px;
+  }
 }
 
-.section__ttl {
-  text-align: center;
-  h2 {
-    font-size: 32px;
-  }
-  p {
-    font-size: 16px;
-    color: $main-color;
-    margin-top: 19px;
-    line-height: 1.19;
-  }
-  
-  .mt23 {
-    margin-top: 23px;
+// ============================================
+// モジュール
+// ============================================
+
+
+@mixin section-ttl {
+  .section__ttl {
+    text-align: center;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+      color: $main-color;
+      margin-top: 19px;
+      line-height: 1.19;
+    }
+    .mt23 {
+      margin-top: 23px;
+    }
+    @include media(m) {
+      h2 {
+        font-size: 28px;
+        margin-top: 15px;
+      }
+      p {
+        font-size: 14px
+      }
+      .mt23 {
+        margin-top: 20px;
+      }
+    }
+    @include media(s) {
+      h2 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+      .mt23 {
+        margin-top: 10px;
+      }  
+    }  
   }
 }
+
+
+
+
+
+
+
+
+
 
