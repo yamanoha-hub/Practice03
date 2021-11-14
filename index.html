@@ -45,12 +45,12 @@
         <a href="#contact" class="contact-btn">お問い合わせ</a>
       </div>
       <!-- /header-btn -->
-      
       <div class="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
+      <!-- /hamburger -->
     </div>
     <!-- /header-inner -->
   </header>
@@ -332,13 +332,14 @@
           あなたの力になります</p>
       </div>
       <!-- /contact__message -->
-      <form class="form">
+      
+      <form class="form" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScYsvRFEyMDy6oXsaGvthp2ZMfN-WZp6JUu7sYLzoPNIHk1JQ/formResponse">
         <div class="form__name">
           <div class="name-text pl1">
             <p>お名前</p>
             <span>必須</span>
           </div>
-          <input type="text">
+          <input type="text" id="name" name="entry.1249839850" required>
         </div>
         <!-- /form__name -->
         <div class="form__mail">
@@ -346,7 +347,7 @@
             <p>メールアドレス</p>
             <span>必須</span>
           </div>
-          <input type="text" class="pl1">
+          <input type="email" class="pl1" id="mail" name="entry.327849955" required>
         </div>
         <!-- /form__mail -->
         <div class="form__contact">
@@ -354,16 +355,19 @@
             <p>お問い合わせ内容</p>
             <span>必須</span>
           </div>
-          <textarea name="message"></textarea>
+          <textarea name="entry.1436010177"  name="entry.1436010177" required></textarea>
         </div>
         <!-- /form__contact -->
         <div class="contact__magu">
           <div class="contact__magu__agree">
-            <input type="checkbox">
+            <input type="checkbox" id="privacyCheck">
             <p class="privacy">プライバシーポリシーに同意する</p>
           </div>
-          <a class="contact-btn" href="#">送信する</a>
+          <input type="submit" value="送信する" class="contact-btn submit-btn" id="js-submit" disabled>
+          <!-- <a class="contact-btn" href="#">送信する</a> -->
         </div>
+        <p class="end-message">お問い合わせありがとうございました。</p>
+        <p class="false-message">送信失敗です。</p>
       </form>
     </section>
     <!-- /contact -->
@@ -383,6 +387,7 @@
     <!-- /.footer-inner -->
   </footer>
   <!-- /.footer -->
+
 
 <script src="/js/script.js"></script>
 <!-- swiper -->
@@ -431,5 +436,6 @@
     duration: 700      //アニメーションの時間(ms)
   });
 </script>
+
 </body>
 </html>

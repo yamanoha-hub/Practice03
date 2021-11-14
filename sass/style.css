@@ -854,6 +854,7 @@ img {
     margin-left: 10px;
   }
   .cords__item p {
+    padding-top: 5px;
     padding-right: 5px;
   }
   .cords__item time {
@@ -1075,6 +1076,7 @@ img {
 .contact .form textarea {
   width: 783px;
   height: 179px;
+  resize: none;
 }
 
 .contact .form__name {
@@ -1169,6 +1171,12 @@ img {
   margin-left: 10px;
 }
 
+.contact__magu input[type="submit"] {
+  width: 155px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1100px) {
   .contact__magu {
     padding-top: 40px 10px;
@@ -1178,6 +1186,19 @@ img {
 @media only screen and (max-width: 1100px) {
   .contact {
     padding: 40px 10px;
+  }
+}
+
+.contact .end-message, .contact .false-message {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact .end-message, .contact .false-message {
+    font-size: 16px;
   }
 }
 
