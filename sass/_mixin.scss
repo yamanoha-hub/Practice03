@@ -1,4 +1,44 @@
 
+@mixin section-ttl {
+  .section__ttl {
+    text-align: center;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+      color: $main-color;
+      margin-top: 19px;
+      line-height: 1.19;
+    }
+    .mt23 {
+      margin-top: 23px;
+    }
+    @include media(m) {
+      h2 {
+        font-size: 28px;
+        margin-top: 15px;
+      }
+      p {
+        font-size: 14px
+      }
+      .mt23 {
+        margin-top: 20px;
+      }
+    }
+    @include media(s) {
+      h2 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+      .mt23 {
+        margin-top: 10px;
+      }  
+    }  
+  }
+}
+
+
 @mixin btnSet {
   display: inline-block;
   width: 155px;
