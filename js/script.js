@@ -7,7 +7,7 @@ $(function() {
   });
 
   // スムーススクロール
-  $('a[href^="#contact"]').click(function() {
+  $('a[href^="#"]').click(function() {
     var target = $($(this).attr("href")).offset().top; //href属性の取得
     target -= 94;
 

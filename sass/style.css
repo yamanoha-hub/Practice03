@@ -937,6 +937,7 @@ img {
 }
 
 .swiper-wrapper {
+  width: 100%;
   margin-top: 69px;
 }
 
