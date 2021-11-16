@@ -273,6 +273,8 @@ img {
     padding-top: 90px;
   }
   .mv__inner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 10px;
     padding-left: 0;
   }
@@ -837,7 +839,7 @@ img {
     line-height: 1;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 0.7rem;
+    font-size: 12px;
   }
 }
 

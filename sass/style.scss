@@ -4,6 +4,7 @@
   @include btnSet;
 }
 
+
 // 表示崩れ見るため
 // * {
 //   outline: 2px solid blue;
@@ -124,6 +125,7 @@
     margin-top: 70px;
     padding-top: 90px;
     &__inner {
+      justify-content: space-around;
       margin: 0 10px;
       padding-left: 0;
       .mv__img {
@@ -461,7 +463,7 @@
         line-height: 1;
         padding-top: 20px;
         padding-bottom: 20px;
-        font-size: 0.7rem;
+        font-size: 12px;
       }
     }
     &__body {
