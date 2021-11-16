@@ -9,7 +9,14 @@ $(function() {
   // スムーススクロール
   $('a[href^="#"]').click(function() {
     var target = $($(this).attr("href")).offset().top; //href属性の取得
-    target -= 94;
+
+    if (window.matchMedia( "(max-width: 1100px) and (min-width: 600px)" ).matches) {
+      target -= 70;
+    } else if (window.matchMedia( "(max-width: 599px)" ).matches) {
+      target -= 50;
+    } else {
+      target -= 94;
+    }
 
     $("html, body").animate({scrollTop: target}, 800);
 
