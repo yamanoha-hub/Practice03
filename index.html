@@ -35,9 +35,10 @@
   <link rel="icon" href="images/favicon.ico"> 
   <!-- リセットCSS -->
   <link rel="stylesheet" href="stylesheet/reset.css">
+  
   <link rel="stylesheet" href="sass/style.css">
   <!-- jQuery -->
-  <script src="/js/jquery-3.6.0.min.js"></script> 
+  <script src="js/jquery-3.6.0.min.js"></script>
   <!-- swiper -->
   <link rel="stylesheet" href="dist/css/swiper-bundle.min.css"> 
   <!-- aos -->
@@ -102,7 +103,7 @@
           <p>FEATURES</p>
         </div>
         <!-- /section__ttl -->
-        <div class="feature__content coding"  data-aos="fade-right">
+        <div class="feature__content coding"  data-aos="flip-up">
           <h3 class="feature__content__ttl">高速コーディング</h3>
           <div class="feature__content__item">
             <img src="images/cto.png" alt="特徴1">
@@ -119,7 +120,7 @@
           </div>
         </div>
         <!-- /.features-content coding -->
-        <div class="features__content high-quality"  data-aos="fade-left">
+        <div class="features__content high-quality" data-aos="flip-up">
           <h3 class="feature__content__ttl">高品質</h3>
           <div class="feature__content__item">
             <img src="images/building_website.png" alt="特徴2">
@@ -136,7 +137,7 @@
           </div>
         </div>
         <!-- /.features-content high-quality -->
-        <div class="features__content response"  data-aos="fade-right">
+        <div class="features__content response"  data-aos="flip-up">
           <h3 class="feature__content__ttl">迅速なレスポンス</h3>
           <div class="feature__content__item">
             <img src="images/new_message.png" alt="特徴3">
@@ -236,7 +237,7 @@
           <h2>ブログ</h2>
           <p>BLOG</p>
         </div>
-        <div class="cords" data-aos="zoom-out">
+        <div class="cords">
           <a href="#" class="cords__item cord--col3">
             <img src="images/blog01.png" alt="blog-ing1">
             <p>サイトをリニューアルオープンしました。</p>
@@ -427,12 +428,16 @@
   	},
 
     breakpoints: {
-      // 1200px以上の場合
+      // 1500px以上の場合
+      1500: {
+        slidesPerView: 5,
+      },
+      // 1250px以上の場合
       1250: {
         slidesPerView: 4,
       },
-      // 980px以上の場合
-      980: {
+      // 700px以上の場合
+      700: {
         slidesPerView: 3,
       },
       // 350px以上の場合

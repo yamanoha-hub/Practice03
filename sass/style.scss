@@ -4,6 +4,11 @@
   @include btnSet;
 }
 
+// 表示崩れ見るため
+// * {
+//   outline: 2px solid blue;
+// }
+
 // ヘッダー
 .header {
   background-color: #fff;
@@ -79,6 +84,10 @@
     margin-left: auto;
     @include media(m) {
       display: none;
+      .contact-btn {
+        display: none;
+        margin-left: 0;
+      }
     }
   }
   .hamburger {
@@ -89,17 +98,18 @@
 
 // メインビジュアル
 .mv {
+  width: 100%;
   height: calc(100vh - 94px);
   margin-top: 94px;
   padding-top: 131px;
-  box-sizing: border-box;
-  &__inner { 
-    padding-left: 10px;
+  &__inner {
+    max-width: 1002px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   &__text {
-    margin-right: 133px;
     h2 { //22 37
       font-size: 32px;
       line-height: 1.68;
@@ -120,7 +130,6 @@
       .mv__img {
         max-width: 40%;
         padding-top: 20px;
-        
       }
     }
     &__text {
@@ -155,18 +164,31 @@
 // メインビジュアル
 
 // 特徴
+.blog {
+  background-color: $bg-color;
+  padding-top: 64px;
+  padding-bottom: 91px;
+  &__inner {
+    max-width: 1227px;
+    margin-left: auto;
+    margin-right: auto;
+    @include section-ttl;
+  }
+}
 .features {
   padding-top: 80px;
   padding-bottom: 156px;
   &__inner {
+    max-width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+    @include section-ttl;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
-    @include section-ttl;
   }
   @include media(m) {
-    padding-bottom: 150px;
+    padding-bottom: 120px;
   }
   @include media(s) {
     padding-bottom: 80px;
@@ -229,6 +251,16 @@
       }
     }
   }
+  @include media(s) {
+    &-text {
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 .high-quality {
@@ -270,6 +302,16 @@
       }
     }
   }
+  @include media(s) {
+    &-text {
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 .response {
@@ -304,6 +346,16 @@
       }
     }
   }
+  @include media(s) {
+    &-text {
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }
 // 特徴
 
@@ -327,7 +379,6 @@
     margin-top: 71px;
     padding-left: 1px;
     &__inner {
-      width: 100%;
       background-color: #fff;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     }
@@ -346,11 +397,23 @@
       padding-left: 30px;
       border-bottom: 1px solid #E5E5E5;
     }  
-  }
-  @include media(m) {
-    .horizontal-table {   
+    @include media(m) {
       margin-top: 50px;
-      padding: 0 10px;      
+      padding: 0 10px;
+      &__inner__notice {
+        font-size: 12px;
+      }
+    }
+    @include media(s) {
+      font-size: 12px;
+      &__header {
+        width: 230px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      &__text {
+        padding-left: 20px;
+      }
     }
   }
   @include media(s) {
@@ -367,17 +430,19 @@
     margin: 0 auto;
     max-width: 907px;
     @include section-ttl;
-    @include media(m) {
-      padding: 0 10px;
-
-    }
   }
   .accordion {
     margin-top: 33px;
+    margin-right: 5px;
+    margin-left: 5px;
     font-size: 14px;
     line-height: 1.86;
     &__ttl {
       height: 58px;
+      @include media(s) {
+        height: auto;
+        line-height: 1;
+      }
     }
     &__btn {
       font-family: 'Noto Sans JP', sans-serif;
@@ -391,6 +456,14 @@
       border: solid 1px #E5E5E5;
       cursor: pointer;
       transition: .25s;
+      margin-top: 0;
+      margin-bottom: 0;
+      @include media(s) {
+        line-height: 1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.7rem;
+      }
     }
     &__body {
       display: none;
@@ -400,20 +473,35 @@
         padding-top: 21px - 6px;
         padding-left: 35px;
         padding-bottom: 32px - 6px;
+        @include media(s) {
+          padding-right: 5px;
+          padding-left: 5px;
+        }
       }
       &:nth-of-type(2) {
         padding-top: 27px - 6px;
         padding-left: 35px;
         padding-bottom: 28px - 6px;
+        @include media(s) {
+          padding-right: 5px;
+          padding-left: 5px;
+        }
       }
       &:nth-of-type(3) {
         padding-top: 28px - 6px;
         padding-left: 37px;
         padding-bottom: 28px - 6px;
+        @include media(s) {
+          padding-right: 5px;
+          padding-left: 5px;
+        }
       }
 
       &--active {
         display: block;
+      }
+      @include media(m) {
+        font-size: 12px;
       }
     }
   }
@@ -427,16 +515,20 @@
   padding-bottom: 91px;
   &__inner {
     max-width: 1227px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     @include section-ttl;
-    @include media(m) {
-      padding: 0 10px;
-    }
   }
 }
 .cords {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @include media(m) {
+    flex-direction: column;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
   .cord--col3 {
     margin-top: 55px;
   }
@@ -456,30 +548,6 @@
       position: absolute;
       right: 38px;
       bottom: 11px;
-    }
-    @include media(m) {
-      &:nth-of-type(2) {
-        margin-right: 10px;
-        margin-left: 10px;
-      }
-      p {
-        padding-top: 5px;
-        padding-right: 5px;
-      }
-      time {
-        text-align: center;
-        right: 0;
-        left: 0;
-      }
-    }
-    @include media(s) {
-      height: 300px;
-      p {
-        font-size: 12px;
-      }
-      time {
-        font-size: 12px;
-      }
     }
   }
 }
@@ -515,12 +583,18 @@
         font-size: 16px;
         line-height: 1.714;
         margin-top: 24px - 5.5px;
+        @include media(m) {
+          font-size: 14px;
+        }
       }
       p {  //10
         font-size: 14px;
         line-height: 1.714;
         margin-top: 34px - 5.5px - 5px;
         margin-bottom: 34px - 5.5px - 5px;
+        @include media(m) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -666,7 +740,7 @@
   }
 }
 // お問い合わせ
-    
+
 // フッター
 .footer {
   background-color: #F8F8F8;
@@ -686,6 +760,13 @@
     a {
       margin-right: 30px;
       color: $color-font;
+    }
+    @include media(m) {
+      font-size: 14px;
+      margin-bottom: 30px;
+      a {
+        margin-right: 15px;
+      }
     }
   }
   &__copyright {

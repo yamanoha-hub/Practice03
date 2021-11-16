@@ -12,8 +12,8 @@ $bg-color: #EEFBFB;
 // ============================================
 
 $breakpoints: (
-  m: "only screen and (max-width: 1100px)", //タブレット
-  s: "only screen and (max-width: 599px)",  //スマートフォン
+  m: "screen and (max-width: 1100px)", //タブレット
+  s: "screen and (max-width: 599px)",  //スマートフォン
 );
 
 @mixin media($breakpoint) {
@@ -21,7 +21,6 @@ $breakpoints: (
     @content;
   }
 }
-
 
 // ============================================
 // ベース
@@ -35,7 +34,6 @@ body {
 img {
   max-width: 100%;
 }
-
 
 // ============================================
 // モジュール
@@ -52,4 +50,5 @@ img {
     background-position: top -400px right -320px;
   }
 }
+
 
