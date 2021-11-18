@@ -238,13 +238,14 @@ img {
 }
 
 .mv {
-  height: calc(100vh - 94px);
   margin-top: 94px;
   padding-top: 131px;
+  padding-bottom: 113px;
 }
 
 .mv__inner {
-  max-width: 1002px;
+  max-width: 1012px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -271,12 +272,14 @@ img {
   .mv {
     margin-top: 70px;
     padding-top: 90px;
+    padding-bottom: 90px;
   }
   .mv__inner {
+    padding-left: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 0 10px;
-    padding-left: 0;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .mv__inner .mv__img {
     max-width: 40%;
@@ -294,15 +297,11 @@ img {
   .mv {
     margin-top: 50px;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   .mv__inner {
-    margin: 0 5px;
-  }
-  .mv__inner .mv__img {
-    max-width: 40%;
-  }
-  .mv__text {
-    margin-right: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
   .mv__text h2 {
     font-size: 20px;
@@ -1163,6 +1162,18 @@ img {
   color: #fff;
 }
 
+@media screen and (max-width: 1100px) {
+  .contact {
+    padding-top: 40px 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact {
+    padding: 40px 10px;
+  }
+}
+
 .contact__message {
   color: #fff;
   font-size: 16px;
@@ -1271,7 +1282,7 @@ img {
   .contact .form {
     padding: 0 20px;
   }
-  .contact .form input, .contact .form textarea {
+  .contact .form input[type="email"], .contact .form input[type="text"], .contact .form textarea {
     max-width: 100%;
     margin-right: 20px;
   }
@@ -1302,6 +1313,7 @@ img {
 
 .contact__magu__agree input[type="checkbox"] {
   width: 20px;
+  border-radius: 0;
 }
 
 .contact__magu__agree .privacy {
@@ -1312,18 +1324,6 @@ img {
   width: 155px;
   border-radius: 10px;
   cursor: pointer;
-}
-
-@media screen and (max-width: 1100px) {
-  .contact__magu {
-    padding-top: 40px 10px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .contact {
-    padding: 40px 10px;
-  }
 }
 
 .contact .end-message, .contact .false-message {

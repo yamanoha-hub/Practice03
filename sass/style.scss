@@ -99,11 +99,12 @@
 
 // メインビジュアル
 .mv {
-  height: calc(100vh - 94px);
   margin-top: 94px;
   padding-top: 131px;
+  padding-bottom: 113px;
   &__inner {
-    max-width: 1002px;
+    max-width: 1012px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -124,10 +125,12 @@
   @include media(m) {
     margin-top: 70px;
     padding-top: 90px;
+    padding-bottom: 90px;
     &__inner {
-      justify-content: space-around;
-      margin: 0 10px;
       padding-left: 0;
+      justify-content: space-around;
+      margin-right: 10px;
+      margin-left: 10px;
       .mv__img {
         max-width: 40%;
         padding-top: 20px;
@@ -143,15 +146,12 @@
   @include media(s) {
     margin-top: 50px;
     padding-top: 60px;
+    padding-bottom: 60px;
     &__inner {
-      margin: 0 5px;
-      .mv__img {
-        max-width: 40%;
-      }
+      margin-right: 5px;
+      margin-left: 5px;
     }
-
     &__text {
-      margin-right: 40px;
       h2 {
         font-size: 20px;
       }
@@ -159,7 +159,6 @@
         font-size: 14px;
       }
     }
-
   }
 }
 // メインビジュアル
@@ -616,6 +615,14 @@
       color: #fff;
     }
   }
+  @include media(m) {
+    padding-top: 40px 10px;
+  }
+
+
+  @include media(m) {
+    padding: 40px 10px;
+  }
   &__message {
     color: #fff;
     font-size: 16px;
@@ -692,7 +699,7 @@
     }
     @include media(m) {
       padding: 0 20px;
-      input, textarea {
+      input[type="email"],input[type="text"], textarea {
         max-width: 100%;
         margin-right: 20px;
       }
@@ -713,6 +720,7 @@
       padding-left: 1px;
       input[type="checkbox"] {
         width: 20px;
+        border-radius: 0;
       }
       .privacy {
         margin-left: 10px;
@@ -723,13 +731,8 @@
       border-radius: 10px;
       cursor: pointer;
     }
-    @include media(m) {
-      padding-top: 40px 10px;
-    }
   }
-  @include media(m) {
-    padding: 40px 10px;
-  }
+
   .end-message, .false-message {
     display: none;
     text-align: center;
