@@ -5,23 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- グーグルフォント -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- /グーグルフォント -->
 
   <!-- Primary Meta Tags -->
   <title>ユアコーディング</title>
   <meta name="title" content="ユアコーディング">
   <meta name="description" content="コーディングの手間を最小に、デザインに注力する助けに">
-
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mitsu-portfolio.com/your-coding/">
   <meta property="og:title" content="ユアコーディング">
   <meta property="og:description" content="コーディングの手間を最小に、デザインに注力する助けに">
   <meta property="og:image" content="https://mitsu-portfolio.com/your-coding/images/manager.png">
-
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://mitsu-portfolio.com/your-coding/">
@@ -35,14 +33,17 @@
   <link rel="icon" href="images/favicon.ico"> 
   <!-- リセットCSS -->
   <link rel="stylesheet" href="stylesheet/reset.css">
-  
   <link rel="stylesheet" href="sass/style.css">
-  <!-- jQuery -->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <!-- swiper -->
+
+  <!-- jQuery cdn-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- swiper DL版 -->  
   <link rel="stylesheet" href="dist/css/swiper-bundle.min.css"> 
-  <!-- aos -->
+  <script src="dist/js/swiper-bundle.min.js"></script> 
+  <!-- aos DL版-->
   <link href="dist/css/aos.css" rel="stylesheet">
+  <script src="dist/js/aos.js"></script>
 </head>
 <body>
   <header class="header">
@@ -406,56 +407,54 @@
   </footer>
   <!-- /.footer -->
 
-<script src="/js/script.js"></script>
-<!-- swiper -->
-<script src="dist/js/swiper-bundle.min.js"></script> 
-<script>
-  const swiper = new Swiper(".swiper", {
-    loop: true,
-    // 表示するスライドの数
-    slidesPerView: 4, 
-    // スライドの間隔
-    spaceBetween: 56, 
-    // カーソル変更
-    grabCursor: true,
-    //現在のスライドを中央に表示
-    centeredSlides: true,
+  <!-- jQuery -->
+  <script src="js/script.js"></script>
+  <!-- swiper js -->
+  <script>
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      // 表示するスライドの数
+      slidesPerView: 4, 
+      // スライドの間隔
+      spaceBetween: 56, 
+      // カーソル変更
+      grabCursor: true,
+      //現在のスライドを中央に表示
+      centeredSlides: true,
+    
+      autoplay: {
+    		delay: 5000,  // 5s
+    		disableOnInteraction: true  // スライド操作後、自動再生を停止
+    	},
   
-    autoplay: {
-  		delay: 5000,  // 5s
-  		disableOnInteraction: true  // スライド操作後、自動再生を停止
-  	},
-
-    breakpoints: {
-      // 1500px以上の場合
-      1500: {
-        slidesPerView: 5,
-      },
-      // 1250px以上の場合
-      1250: {
-        slidesPerView: 4,
-      },
-      // 700px以上の場合
-      700: {
-        slidesPerView: 3,
-      },
-      // 350px以上の場合
-      350: {
-        slidesPerView: 2,
+      breakpoints: {
+        // 1500px以上の場合
+        1500: {
+          slidesPerView: 5,
+        },
+        // 1250px以上の場合
+        1250: {
+          slidesPerView: 4,
+        },
+        // 700px以上の場合
+        700: {
+          slidesPerView: 3,
+        },
+        // 350px以上の場合
+        350: {
+          slidesPerView: 2,
+        }
       }
-    }
-  });
-</script>
-<!-- aos.js -->
-<script src="dist/js/aos.js"></script>
-<script>
-  AOS.init({
-    disable: 'phone',  //スマートフォンのみ無効
-    offset: 200,       //動き始めまでの距離(px)
-    delay: 100,        //動き始めまでの時間(ms)
-    duration: 700      //アニメーションの時間(ms)
-  });
-</script>
-
+    });
+  </script>
+  <!-- aos js -->
+  <script>
+    AOS.init({
+      disable: 'phone',  //スマートフォンのみ無効
+      offset: 200,       //動き始めまでの距離(px)
+      delay: 100,        //動き始めまでの時間(ms)
+      duration: 700      //アニメーションの時間(ms)
+    });
+  </script>
 </body>
 </html>
