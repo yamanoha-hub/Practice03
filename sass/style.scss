@@ -6,9 +6,9 @@
 
 
 // 表示崩れ見るため
-* {
-  outline: 2px solid blue;
-}
+// * {
+//   outline: 2px solid blue;
+// }
 
 // ヘッダー
 .header {
@@ -164,17 +164,6 @@
 // メインビジュアル
 
 // 特徴
-.blog {
-  background-color: $bg-color;
-  padding-top: 64px;
-  padding-bottom: 91px;
-  &__inner {
-    max-width: 1227px;
-    margin-left: auto;
-    margin-right: auto;
-    @include section-ttl;
-  }
-}
 .features {
   padding-top: 80px;
   padding-bottom: 156px;
