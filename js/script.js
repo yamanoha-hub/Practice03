@@ -1,9 +1,15 @@
 'use strict';
 
 $(function() {
-  // メニューバー
+
+  // ハンバーガー サイドバー
   $(".hamburger").click(function() {
     $(this).toggleClass('hamburger__active');
+    if($('.hamburger').hasClass('hamburger__active')) {
+      $('.header-nav').show();
+    } else {
+      $('.header-nav').hide();
+    }
   });
 
   // スムーススクロール

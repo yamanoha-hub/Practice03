@@ -4,7 +4,6 @@
   @include btnSet;
 }
 
-
 // 表示崩れ見るため
 // * {
 //   outline: 2px solid blue;
@@ -40,6 +39,32 @@
     }
   }
 
+  &-nav {
+    margin-left: 136px;
+    &__item {
+      display: flex;
+      li {
+        margin-right: 49px;
+        font-size: 16px;
+        a {
+          color: $color-font;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &-btn {
+    margin-left: auto;
+    .contact-btn {
+      @include btnSet;
+    }
+  }
+  .hamburger {
+    @include hamburgerMenu;
+  }
+
   @include media(m) {
     &__inner {
       height: 70px;
@@ -52,6 +77,12 @@
         font-size: 20px;
       }
     }
+    &-nav {
+      @include side-bar;
+    }
+    &-btn {
+      display: none;
+    }
   }
   @include media(s) {
     &__inner {
@@ -63,39 +94,9 @@
       }
     }
   }
-
-  &-nav__item {
-    margin-left: 136px;
-    display: flex;
-    li {
-      margin-right: 49px;
-      font-size: 16px;
-      a {
-        color: $color-font;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    @include media(m) {
-      display: none;
-    }
-  }
-  &-btn {
-    margin-left: auto;
-    @include media(m) {
-      display: none;
-      .contact-btn {
-        display: none;
-        margin-left: 0;
-      }
-    }
-  }
-  .hamburger {
-    @include hamburgerMenu;
-  }
 }
 // ヘッダー
+
 
 // メインビジュアル
 .mv {
